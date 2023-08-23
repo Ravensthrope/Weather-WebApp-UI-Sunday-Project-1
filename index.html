@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App | Sunday-Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-info">
+            <div class="pic-gradient"></div>
+            <div class="today-info">
+                <h2>Tuesday</h2>
+                <span>22 August 2023</span>
+                <div>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAv9JREFUWEftl1uITlEUx39DDYUHymhcSrkrNMglheKBIqRIU+SBhmeUJ5cHDzwr90SRF4kmHgxyS7lGjEuSmgcKScr90r/WnvZ8c87Zex/z8KVZdTrfPnuttf973b8aqoxqqgwP/yWg7cA2s/QOQOvS1BUW6gZUaf4ewGRgvj2zgN7G9BW4AVy05x7wO8V/qS4bApwDGiIPuQssBdoi+ZOybA5wGhgQq9z43gMrgEsxcrEW2gDshQ4XkGvOANeAZ3bYWGA2sByY5gH4A0jH/hCoGEDTLS56mrKnwFrgVkD5AuAAMMz4fgEzgdtFciFA/YCHwHBT8gCYB3wI3dT264ErwGhbvwImAp/z5EOAFDPLTPglIGspJhxtBlYCE+zDI+AUsMfjUSIouAfZt+PA6jKARgIvPEGl+n1bj7CDp+QoFgAB1SVEi4GzHq8s9yZLtshC6ywGJKfgdZbS+g6QB8adI1BTvUMVO26tGDyaCugEsMqEGgGtRXLT7sgY2uK5b5P3+xiwJgaQ3xg3AgNNSJniiluMdbKsJItKVvQW2OcBaj+30mWqF1nUC/huG9+A2kgLSUayov4F2dmOIxaQ0t+lallA0vEp5yK5gHyXqbLWmYIxwHP7XdZl44HHqS7zL6Aqq0wT6X3oH4NaMan2I1ILaYoJap9niaW7vl0AFnqbMVaqTPvLwFzTsQhoTgXUx6qyC0rNPTdNSWph1KSgFiJSoCueXJJ0wBVqHbuArSbx2grbO09DTOsYbA1Vb9FObwbvZKQQIKW33ON6lSZANdePWebO+KYW0QKMsz3Jqx/+zJMPAZKcurMUufHjiVVZV+TydGv8OAgMNYYfwCSgtegyMYAkryxTZdU87eiqBf11KwnSJUsocDWg+b1Os9B64EjIsrGApGcGcNKbjUK63b5iT43ZTQqFcimApKgvcNhm5BhAmn1Uf3IHskolqYCc/CirS6pNcpH7G/QFUL05b3VGE2ISlQXkH9L9zzVk8qqzUAhw0n5XxFDSgSHmqgP0F17emCXF64hTAAAAAElFTkSuQmCC" />
+                    <span>Paris, FR</span>
+                </div>
+            </div>
+            <div class="today-weather">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAupJREFUWEfll1uoTVEUhr/DyeXRESJ5djmFF14VQu65e/CAEIWUW+63UAovLhGlcHSOWyhFLs8oD+RFyYsSSkoht/4aS6PVnmvNudplc0bt9tp7jjnGP+cY4x9jNdFg0tRgePgvAe0CtttN7wT0u7LU44Y6N6AewGZgN/AjEAeFaYetKXR7AnrNwBZgP/AtFNOikMnADWAi0A4sCIAaA+gjuQ88rOGsK3AJmAXcBGaEDlgEaDVw1Bk/DywCfiZmbBfgIjDX7VsFHKtlpwiQTtVhp8n2LgHOJAJaDpxwe2RzfpUbkg2F7RowGbhip/S51AsYAQwzh8+Ap8BHB0AH095pZmsO8L1KDmV7ugEbLRkzQwMsnLMDhi8Aa4D3tt4d2ATsKwIj3So8NBS4C/QvCd0rYCyg72hJBTQIeAz0cR4E7rn9bjUQ2bLAjHI3VQosFdBVl+TvLDnv5byMB9qAFvv/JLCiFIkppABSiN44w1OAWwFHCwHRhOQr0Bv4HAMqD0is68UTnUr+tC0+slAU+XgBDDaFScBte/ZEqr9++YbsAek5T3q+e291bUGkJnIrklPAUlNY60jWN+Ns/x8cKYBU+gfMwnFgZQkgkaFIUbIeOGTP0YCkXxSyeZas0osJmQhyuIEQX11ODVlZzqnU3zruUoO8HtikvqVmKhGzq+I+lTnQekqVSV9NUn1IorKX4wc5RxMAMXVW9meBxTFgqgAaCDwB+joHd4wY1fdUVePcmohxtIGPwpR6QzI6xOaefiUeXhq411FITCkGkJqrpkbfGNVcD+dmHO/3HLAO+GB/yoamRU2TwU4fEzKFQaPDVJsalT+eqzR+jATUw+QoGz98AvvxQ0Wgiqs0fgiMhqnp7uhKTiVpiiwD1M8yqTygaZ454gz99RFWN6SBXGVcjyFfNmaaTX3XDFtZUvcENgB7I1+DtplurZBmr0EHgS+hmJcBismVzv3m+k/eUAzoaJ165FC0sxjFhgP0G49bnyVX3pWVAAAAAElFTkSuQmCC" />
+                <span>25°C</span>
+                <h3>Sunny</h3>
+            </div>
+        </div>
+        <div class="right-info">
+            <div class="day-info">
+                <div>
+                    <span class="title">PRECIPITATION</span>
+                    <span class="value">4 %</span>
+                </div>
+                <div>
+                    <span class="title">HUMIDITY</span>
+                    <span class="value">25 %</span>
+                </div>
+                <div>
+                    <span class="title">WIND SPEED</span>
+                    <span class="value">6 km/h</span>
+                </div>
+            </div>
+            <ul class="days-list">
+                <li>
+                    <i class='bx bx-cloud-light-rain'></i>                    <span>Sat</span>
+                    <span class="day-temperature">23°C</span> 
+                </li>
+                <li>
+                    <i class='bx bx-cloud'></i>
+                    <span>Sun</span>
+                    <span class="day-temperature">24°C</span>
+                </li>
+                <li>
+                    <i class='bx bx-cloud-rain'></i>
+                    <span>Mon</span>
+                    <span class="day-temperature">03°C</span>
+                </li>
+                <li>
+                    <i class='bx bx-cloud-drizzle'></i>
+                    <span>Tue</span>
+                    <span class="day-temperature">19°C</span>
+                </li>
+            </ul>
+            <div class="btn-container">
+                <button class="loc-button">
+                    Search Location
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
